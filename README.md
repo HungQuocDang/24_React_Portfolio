@@ -18,5 +18,7 @@ GitHub link:  https://github.com/HungQuocDang/24_React_Portfolio
 
 Deployed link:  https://hungquocdang.github.io/24_React_Portfolio/
 
+Demo:  https://drive.google.com/file/d/1oRYVEnBYCPv6L-v_7Vrv9yo6a5d6WXxC/view
+
 
 ![Alt text](ListOfProjects.png)
