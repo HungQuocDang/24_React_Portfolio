@@ -1,24 +1,94 @@
 import React from 'react';
+import "bootstrap/dist/css/bootstrap.min.css";
+//import Professional_Po from  "../../imagesA/Professional_Portfolio.PNG";
+import Card from "./Card";
+import Professional_Portfolio from  "../../imagesA/Professional_Portfolio.PNG";
+import Code_Refactor from "../../imagesA/Code_Refactor.PNG";
+import Password_Generator from "../../imagesA/Password_Generator.PNG";
+import Weather from "../../imagesA/Weather.PNG";
+import Professional_README_Generator from "../../imagesA/Professional_README_Generator.PNG";
+import Regex_HEX_Tutorial from "../../imagesA/Regex_HEX_Tutorial.PNG";
 
-export default function Portfolio() {
+function Portfolio() {
   return (
-    <div>
-      <h1>Porfolio</h1>
-      <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-        Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-        dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-        sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-        sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-        vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-        libero. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-        lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-        in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-        bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-        est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
+        // Portfolio container
+    <div className="wrapper">
+      <h2 className="title">Portfolio</h2>
+      <div className="container">
+        <div className="row">
+          {[
+            {
+              title: "Professional Portfolio",
+              description: "Advanced CSS Challenge: Professional Portfolio",
+              imgSrc: Professional_Portfolio,
+              deployedLink:
+                "https://github.com/HungQuocDang/Assigment-02",
+              githubLink:
+                "https://hungquocdang.github.io/Assigment-02/",
+            },
+            {
+              title: "Code Refactor",
+              description: "HTML CSS Git Challenge: Code Refactor",
+              imgSrc: Code_Refactor,
+              deployedLink:
+                "https://hungquocdang.github.io/Assigment-01/",
+              githubLink:
+                "https://github.com/HungQuocDang/Assigment-01",
+            },
+            {
+              title: "Password Generator",
+              description: "JavaScript Challenge: Password Generator",
+              imgSrc: Password_Generator,
+              deployedLink:
+                "https://hungquocdang.github.io/Assignment-03B/",
+              githubLink:
+                "https://github.com/HungQuocDang/Assignment-03B",
+            },
+            {
+              title: "Weather Dashboard",
+              description: "Server-Side APIs Challenge: Weather Dashboard",
+              imgSrc: Weather,
+              deployedLink:
+                "https://thomascalle.github.io/JavaScript_Interview_Assessment/",
+              githubLink:
+                "https://github.com/ThomasCalle/JavaScript_Interview_Assessment",
+            },
+            {
+              title: "Regex Tutorial",
+              description: "Computer Science for JavaScript Challenge: Regex Tutorial",
+              imgSrc: Regex_HEX_Tutorial,
+              deployedLink:
+                " https://hungquocdang.github.io/Matching-Hex-Regex-Aug30/",
+              githubLink:
+                "https://gist.github.com/HungQuocDang/45a182cac3bf92b2b4501193c52aacda",
+            },
+            {
+              title: "Professional README Generator",
+              description: "Node.js Challenge: Professional README Generator",
+              imgSrc:Professional_README_Generator,
+              deployedLink:
+                "https://thomascalle.github.io/Thomas-Weather-Dashboard/",
+              githubLink:
+                "https://github.com/ThomasCalle/Thomas-Weather-Dashboard",
+            },
+          ].map((project, index) => (
+            // Div container for each project
+            <div className="col-12 col-md-6 col-lg-4 my-2" key={index}>
+              {/* <h2>{project.title}</h2> */}
+              <Card
+                title={project.title}
+                description={project.description}
+                imgSrc={project.imgSrc}
+                deployedLink={project.deployedLink}
+                githubLink={project.githubLink}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
+// Export Portfolio
+export default Portfolio;
+
