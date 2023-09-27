@@ -8,8 +8,8 @@ function NavTabs({ currentPage, handlePageChange }) {
       <li className="nav-item">
         <a
           href="#HungQuocDang"
-          onClick={() => handlePageChange('HungQuocDang')}
-          //className={currentPage === 'HungQuocDang' ? 'nav-link active' : 'nav-link'}
+          //onClick={() => handlePageChange('HungQuocDang')}
+          className={currentPage === 'HungQuocDang' ? 'nav-link active' : 'nav-link'}
         >
           HungQuocDang
         </a>
