@@ -13,4 +13,10 @@ npm start
 Then a browser will open for users to interact with the page.
 
 
+
+GitHub link:  https://github.com/HungQuocDang/24_React_Portfolio
+
+Deployed link:  https://hungquocdang.github.io/24_React_Portfolio/
+
+
 ![Alt text](ListOfProjects.png)
