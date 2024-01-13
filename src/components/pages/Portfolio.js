@@ -49,9 +49,9 @@ function Portfolio() {
               description: "Server-Side APIs Challenge: Weather Dashboard",
               imgSrc: Weather,
               deployedLink:
-                "https://thomascalle.github.io/JavaScript_Interview_Assessment/",
+                "https://hungquocdang.github.io/WeatherForecast/",
               githubLink:
-                "https://github.com/ThomasCalle/JavaScript_Interview_Assessment",
+                "https://github.com/HungQuocDang/WeatherForecast",
             },
             {
               title: "Regex Tutorial",
@@ -67,9 +67,9 @@ function Portfolio() {
               description: "Node.js Challenge: Professional README Generator",
               imgSrc:Professional_README_Generator,
               deployedLink:
-                "https://thomascalle.github.io/Thomas-Weather-Dashboard/",
+                "https://hungquocdang.github.io/readme-generator/",
               githubLink:
-                "https://github.com/ThomasCalle/Thomas-Weather-Dashboard",
+                "https://github.com/HungQuocDang/readme-generator",
             },
           ].map((project, index) => (
             // Div container for each project
